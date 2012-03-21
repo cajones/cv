@@ -36,7 +36,7 @@
             font-weight: bold;
         }
         div.row {
-            margin-bottom: px;
+            margin-bottom: 4px;
         }
         section > div {
             margin-bottom: 24px;
@@ -61,6 +61,34 @@
             background: none;   
         }
 
+        .certs {
+            margin-top: 6px;
+            margin-bottom: 18px;
+        }
+        .certs li {
+            margin-bottom: 6px;
+        }
+        .certs .name {
+            width: 320px;
+            display: inline-block;
+        }
+        .certs .date {
+            font-style: italic;
+            margin-left: 32px;
+        }   
+        @media (max-width: 600px) {
+            .certs .name {
+                display: block;
+            }
+            .certs .date {
+                margin-left: 0px;
+            }    
+        }
+        #clients div img{
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+        }
     </style>
     <script type="text/javascript">
         var _gaq = _gaq || [];
@@ -149,9 +177,7 @@
             </div>
         </div>
         <div id="values" class="row">
-            <div class="span6">
-                <h2>VALUES</h2>
-            </div>
+            <h2 class="span6">VALUES</h2>
         </div>
         <div class="row">
             <div class="span12 summary">
@@ -164,11 +190,9 @@
             </div>
         </div>
         <div id="skills" class="row">
-            <div class="span6">
-                <h2>SKILLS AND PROFICIENCIES</h2>
-            </div>
+            <h2 class="span6">SKILLS AND PROFICIENCIES</h2>
         </div>
-        <div id="skills" class="row">
+        <div class="row">
             <table class="table table-bordered span6">
                 <tbody>
                     <tr>
@@ -255,22 +279,54 @@
                     </tr>
                 </tbody>
             </table>
-            <div class="span6">
-            </div>
         </div>
         <div id="training" class="row">
-            <div class="span6">
-                <h2>TRAINING AND QUALIFICATIONS</h2>
-            </div>
+            <h2 class="span6">TRAINING AND QUALIFICATIONS</h2>
+        </div>
+        <div class="row certifications span12">
+            <h3>Active Certifications</h3>
+            <ul class="unstyled">
+                <li>Microsoft® Certified Professional Developer (MCPD)</li>
+                <ul class="certs">
+                    <li><span class="name">Web Developer 4</span><span class="date">Achievement Date: 07/07/2011</span></li>
+                </ul>
+                <li>Microsoft® Certified Technical Specialist (MCTS)</li>
+                <ul class="certs">
+                    <li><div class="name">.NET Framework 4, Service Communication Applications</div><span class="date">Achievement Date: 06/07/2011</span></li>
+                    <li><div class="name">.NET Framework 4, Web Applications</div><span class="date">Achievement Date: 03/07/2011</span></li>
+                    <li><div class="name">.NET Framework 4, Data Access</div><span class="date">Achievement Date: 30/06/2011</span></li>
+                </ul>
         </div>
         <div id="exp" class="row">
-            <div class="span6">
-                <h2>RELEVENT PROFESSIONAL EXPERIENCE</h2>
+            <h2 class="span6">RELEVENT PROFESSIONAL EXPERIENCE</h2>
+        </div>
+        <div class="row span12">
+            <h3>Feb 2007 - Current</h3>
+            <div class="row">
+                <p class="span6">
+                    <strong>Development Team Leader</strong> at Twofour <br />Twofour Studios, Estover, Plymouth, United Kingdom</p>
+                <p class="span6">
+                    At Twofour I have been responsible for delivering a number of high profile media projects, including HBO’s GO online secure video service, the European Parliament’s web TV site and projects for UK Parliament and Number 10. For the BBC we engineered a live to web audio “Listen Again” service with extreme resilience and reliability. <br /> In my role I have been responsible for managing small to medium teams, motivating and organising them to deliver reliably and on time.  <br /> I have worked directly with leading experts from Microsoft on new and unreleased technologies for client’s projects.</p>
+            </div>
+            <h3>May 2005 – Feb 2007</h3>
+            <div class="row">
+                <p class="span6">
+                    <strong>Application Developer</strong> at Radiology Integrated Training Initiative<br /> NHS Knowledge Spa, Royal Cornwall Hospital</p>
+                <p class="span6">
+                    Developing Distributed, Web Service-based Applications for e-learning, specifically for the field of Radiology. This project involved secure internet communications and the manipulation and encrypted delivery of user content &amp; high-resolution images. <br /> While working on this project we were awarded <em>‘The 2006 E-Learning Team of the Year’</em> award presented by e-learning age magazine. This system is now in use by specialised radiology training academies across the UK. </p>
+            </div>
+            <h3>1997- May 2005 </h3>
+            <div class="row">
+                <p class="span6">
+                    <strong>Developer and Application Support</strong> at Databasics Hospitality Systems Ltd <br /> Budock Water, Falmouth, Cornwall</p>
+                <p class="span6">
+                    Designing and implementing point of sale solutions for bars and restaurants, Hotel Reservation systems and office management systems. My role was to produce and support a number of key applications across a user base of over 200 sites. </p>
             </div>
         </div>
         <div id="clients" class="row">
-            <div class="span6">
-                <h2>CLIENT LIST</h2>
+            <h2 class="span6">CLIENT LIST</h2>
+            <div class="row span12">
+                <img src="img/clients-composite.jpg" alt="HBO, BBC, Microsoft, Universal Music, Audi, Volkswagen, European Parliament, GSK, BAFTA, M6, Antena 3, London Organising Committee of the Olympic Games, British Society of Echocadiography and many more..." />
             </div>
         </div>
     </section>
