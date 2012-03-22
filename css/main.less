@@ -1,36 +1,50 @@
+@unit: 8px;
+@small-gap: @unit *1;
+@big-gap: @unit *4;
+
+@font-family : "Calibri", "Helvetica Neue", "Helvetica", Verdana, sans-serif;
+
+@heading-margin: 3px 0px 6px 6px;
+
+@dark: #4f81bd;
+@light: #dbe5f1;
+
 body {
     margin-top: 60px;
-    font: 10pt "Calibri", "Helvetica", Verdana, sans-serif;
+    font-family: @font-family;
 }
 h1 {
     color:#ffffff;
-    background-color: #4f81bd;
-    font: 11pt "Calibri", "Helvetica", Verdana, sans-serif;
+    background-color: @dark;
+    font: 11pt @font-family;
     font-weight: bold;
-    padding: 3px 0px 6px 6px;
+    padding: @heading-margin;
 }
 h2 {
-    background-color: #dbe5f1;
-    font: 11pt "Calibri", "Helvetica", Verdana, sans-serif;
+    background-color: @light;
+    font: 11pt @font-family;
     font-weight: bold;
-    padding: 3px 0px 6px 6px;
+    padding: @heading-margin;
 }
 h3 {
-    font: 11pt "Calibri", "Helvetica", Verdana, sans-serif;
+    font: 11pt @font-family;
     font-weight: bold;
 }
+p {
+    font: 10pt @font-family;
+}
 abbr {
-    color: #4f81bd;
+    color: @dark;
     font-weight: bold;
 }
 em {
     font-weight: bold;
 }
 div.row {
-    margin-bottom: 4px;
+    margin-bottom: @small-gap;
 }
 section > div {
-    margin-bottom: 24px;
+    margin-bottom: @big-gap;
 }
 .linked-document {
     float: right;
@@ -40,11 +54,12 @@ section > div {
 }
 
 .qualification {
-    margin: 8px 16px 0px 0px;
+    margin: @unit (@unit * 2) 0px 0px;
 }
 .summary {
     font-size: 130%;
     text-align: center;
+    padding: @big-gap 0px @big-gap 0px;
 }
 
 .sequence li {
@@ -52,7 +67,7 @@ section > div {
     display: inline;
     margin-left: 16px;
     margin-right: 0px;
-    padding-right: 32px;
+    padding-right: @big-gap;
     background: url(../img/h-line.jpg) right center no-repeat
 }
 .sequence li:last-child {
@@ -67,12 +82,12 @@ section > div {
     margin-bottom: 6px;
 }
 .certs .name {
-    width: 320px;
+    width: 300px;
     display: inline-block;
 }
 .certs .date {
     font-style: italic;
-    margin-left: 32px;
+    margin-left: @big-gap;
 }   
 @media (max-width: 600px) {
     .certs .name {
