@@ -96,7 +96,7 @@
                 </div>
             </div>
         </div>
-        <div id="values" class="row">
+        <div id="values" class="row trigger">
             <h2 class="span6">VALUES</h2>
         </div>
         <div class="row">
@@ -109,7 +109,7 @@
                 </ul>
             </div>
         </div>
-        <div id="skills" class="row">
+        <div id="skills" class="row trigger">
             <h2 class="span6">SKILLS AND PROFICIENCIES</h2>
         </div>
         <div class="row">
@@ -200,7 +200,7 @@
                 </tbody>
             </table>
         </div>
-        <div id="training" class="row">
+        <div id="training" class="row trigger">
             <h2 class="span6">TRAINING AND QUALIFICATIONS</h2>
         </div>
         <div class="row certifications span12">
@@ -217,7 +217,7 @@
                     <li><div class="name">.NET Framework 4, Data Access</div><span class="date">Achievement Date: 30/06/2011</span></li>
                 </ul>
         </div>
-        <div id="exp" class="row">
+        <div id="exp" class="row trigger">
             <h2 class="span6">RELEVENT PROFESSIONAL EXPERIENCE</h2>
         </div>
         <div class="row span12">
@@ -243,13 +243,23 @@
                     Designing and implementing point of sale solutions for bars and restaurants, Hotel Reservation systems and office management systems. My role was to produce and support a number of key applications across a user base of over 200 sites. </p>
             </div>
         </div>
-        <div id="clients" class="row">
+        <div id="clients" class="row trigger">
             <h2 class="span6">CLIENT LIST</h2>
-            <div class="row span12">
-                <img src="img/clients-composite.jpg" alt="HBO, BBC, Microsoft, Universal Music, Audi, Volkswagen, European Parliament, GSK, BAFTA, M6, Antena 3, London Organising Committee of the Olympic Games, British Society of Echocadiography and many more..." />
+            
+        </div>
+        <div class="row">
+            <div class="span12">
+                <img  src="img/clients-composite.jpg" alt="HBO, BBC, Microsoft, Universal Music, Audi, Volkswagen, European Parliament, GSK, BAFTA, M6, Antena 3, London Organising Committee of the Olympic Games, British Society of Echocadiography and many more..." />
             </div>
         </div>
     </section>
     <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"></script>
+    <script type="text/javascript">
+        $(function(){
+            $('.trigger').click(function() {
+                $(this).next().toggle('fade');
+            });
+        });
+    </script>
 </body>
 </html>
