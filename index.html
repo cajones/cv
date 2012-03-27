@@ -257,7 +257,7 @@
     <script type="text/javascript">
         $(function(){
             $('.trigger').click(function() {
-                $(this).next().toggle('fade');
+                $(this).next().animate({'height': 'toggle', 'opacity': 'toggle'}, 460);
             });
         });
     </script>
