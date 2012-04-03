@@ -296,18 +296,18 @@
                     <td><img src="img/bbc.jpg" alt="BBC Audio Services" /></td>
                     <td>BBC Coyopa</td>
                     <td>To provide an audio catch-up service, the BBC commissioned us to produce a live to download transcode service. The system had to be robust and reliable and capable of delivering audio despite critical failure. The final</td>
-                    <td></td>
+                    <td>Windows Services, C#, MSMQ</td>
                 </tr>
             </table>
         </div>
     </section>
     <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"></script>
     <script type="text/javascript" src="https://raw.github.com/ChrisJones0099/mesa.js/master/mesa.js"></script>
+    <script type="text/javascript" src="js/App.js"></script>
     <script type="text/javascript">
         $(function(){
-            $('.trigger').click(function() {
-                $(this).next().animate({'height': 'toggle', 'opacity': 'toggle'}, 460);
-            });
+            var app = new App($);
+            app.start();
         });
     </script>
 </body>
